@@ -57,4 +57,15 @@ The dataset I’m using for my capstone project is available [here](https://www.
 * There seems to be no correlation between the review score and the revenue of the product.
 
 ### Customers
+![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%201/Pictures/Number_of_Units_Bought_by_Single_Customer.png)
+* Similar to the sellers, the majority of buyers conduct very little purchases, there are some exceptions that buy a lot
 
+### Installments
+![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%201/Pictures/Comparison_of_Payment_Value_and_Number_of_Installments.png)
+* It seems like there is no clear trend between the number of installments and the payment value of the order. It would be interesting to test whether the income has an impact on the number of installments chosen, but unfortunately due to the data available this is not possible.
+
+### Seller
+![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%201/Pictures/Distribution_Sellers_Revenue.png)
+* There are many sellers on the platform, but a few of them are able to create a significant revenue, this can be seen in the distribution of the seller's revenue, the mean revenue and the median revenue. The median revenue is with BRL 821.48 substantially lower than the mean BRL 4'391.48. This means that there are some outliers that highly influence the mean, but do not have an impact on the median.
+* It seems like there is no relationship between the order value and the total revenue of the seller.
+* The largest seller created a revenue of BRL 229'472.63 in the examined period.
