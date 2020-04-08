@@ -35,3 +35,10 @@ Some of the questions the analysis is trying to answer are:
 The dataset I’m using for my capstone project is available [here](https://www.kaggle.com/olistbr/brazilian-ecommerce). It is a dataset about an e-commerce marketplace in Brazil. It contains csv-files with information about around 100’000 purchase orders on the platform. The files come from a relational database and can be merge in the following way:
 
 ![alt text](https://i.imgur.com/HRhd2Y0.png "Database Structure")
+
+### Data Preparation
+1. The first thing in starting the project was to read in the csv-files from the olist database.
+2. After reading in the datasets, they were merged into a master dataframe using the relationship visible in the graph above.
+3. The dataset itself was already clean and complete, so it didn’t need a lot of preparation before starting with the descriptive analysis. The only challenge I faced was duplicate values in the master dataframe. The duplicate values exist in the database, because the customer may pay an order with more than one payment method. If she/he decided to pay with more than one payment method, the database created a sequence with the same order id. I dropped these duplicates, because for the business questions it was more important to have unique orders. When dropping the duplicate orders I kept the last in order to still keep the information about how many different types the person used. 
+4. There were no missing values that needed to be replaced.
+5. When analyzing the data it became clear that the dataset naturally has many outliers. The majority of customers and sellers on the platform are small and only have a couple of transactions during the period. There are however some customers and sellers that have large transactions which make data visualization difficult in many cases. The problem was addressed by using a log-scale on the variable in order to still display everything in a meaningful graph.
