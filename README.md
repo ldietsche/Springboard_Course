@@ -46,3 +46,6 @@ The dataset I’m using for my capstone project is available [here](https://www.
 ## Exploratory Analysis
 
 ![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%201/Pictures/Heatmap.png "Heatmap")
+* The strongest correlation can be examined between freight value and the price of the product, a potential explanation of that is that bigger products generally have a higher value.
+* There is almost no correlation between the price and the review score - probably the expectations of the user are in line with the price paid and if the price is lower the customer already expects a lower quality.
+* There is a low correlation between the number of installments and the price, a potential explanation would be that there are several customer groups: higher income customers that generally do not use installments, lower income customer that use installments more frequently - it would be interesting to investigate whether within this subgroup the relationship is different. Another possibility is that paying everything at once gives the user discounts and thus people are more incentivized to pay all up front.
