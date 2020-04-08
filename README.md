@@ -30,3 +30,6 @@ Some of the questions the analysis is trying to answer are:
 * Do positive reviews lead to more sales?
 * Where are sellers located?
 * Do sellers sell more locally or over the entire country?
+
+## Dataset
+
