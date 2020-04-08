@@ -69,3 +69,12 @@ The dataset I’m using for my capstone project is available [here](https://www.
 * There are many sellers on the platform, but a few of them are able to create a significant revenue, this can be seen in the distribution of the seller's revenue, the mean revenue and the median revenue. The median revenue is with BRL 821.48 substantially lower than the mean BRL 4'391.48. This means that there are some outliers that highly influence the mean, but do not have an impact on the median.
 * It seems like there is no relationship between the order value and the total revenue of the seller.
 * The largest seller created a revenue of BRL 229'472.63 in the examined period.
+
+## Recommendation System
+### Collaborative Filtering
+* Unfornatuely the dataset does not give detailed insights about the customer such as age, gender so the only two variables that help to produce somewhat meaningful results are: the average review of the customer and the mean review a specific customer has given other products in the same category.
+* Accross all of the products if we create a collaborative filtering algorithm, we get a mean error of 1.12
+
+### Linear Regression
+
+## Customer Lifetimevalue
