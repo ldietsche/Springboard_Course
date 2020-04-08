@@ -45,3 +45,4 @@ The dataset I’m using for my capstone project is available [here](https://www.
 
 ## Exploratory Analysis
 
+![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%201/Pictures/Heatmap.png "Heatmap")
