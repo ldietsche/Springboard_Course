@@ -32,4 +32,7 @@ Some of the questions the analysis is trying to answer are:
 * Do sellers sell more locally or over the entire country?
 
 ## Dataset
+The dataset I’m using for my capstone project is available [here](https://www.kaggle.com/olistbr/brazilian-ecommerce). It is a dataset about an e-commerce marketplace in Brazil. It contains csv-files with information about around 100’000 purchase orders on the platform. The files come from a relational database and can be merge in the following way:
 
+Inline-style: 
+![alt text](https://i.imgur.com/HRhd2Y0.png "Logo Title Text 1")
