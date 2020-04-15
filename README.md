@@ -85,3 +85,5 @@ The dataset I’m using for my capstone project is available [here](https://www.
 * Using the package lifetimes can help us estimate the future transcation value per seller or customer, this will give us an idea, how much a customer is worth to the company/seller.
 * Based on the average number of purchases and the purchase value one can estimate the overall customer lifetime value. The results show that the CLV of the analyzed period is around BRL 140 for the platform seller. 
 * The revenue paid by the customer represents the overall revenue, as Olist only gets a commission on each transaction and a monthly subscription fee, the customer lifetime value of an Olist customer is much higher.
+
+## Future Work
