@@ -77,7 +77,8 @@ The dataset I’m using for my capstone project is available [here](https://www.
 * It should be mentioned that the ratings suffer a bias, because of two reasons, most of the people do not give a rating after an online purchase. If they do they give it because the product either exceeded or failed to meet their expecations. This leads to a sample bias. 
 
 ### Linear Regression
-* Using a Linear Regression with the independent variables product_id, customer_state, product_category_name, product_photos_qty were not able to generate significant results and it would be better for Olist to use a collaborative filtering approach that 
+* Using a Linear Regression with the independent variables product_id, customer_state, product_category_name, product_photos_qty were not able to generate significant results and it would be better for Olist to use a collaborative filtering approach that learns over time.
+* if one could include further characteristics such as age, income, gender, interests, a linear regression model might perform better than a collaborative filtering.
 
 ## Customer Lifetimevalue
 *
