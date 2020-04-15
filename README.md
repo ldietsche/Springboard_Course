@@ -72,9 +72,12 @@ The dataset I’m using for my capstone project is available [here](https://www.
 
 ## Recommendation System
 ### Collaborative Filtering
-* Unfornatuely the dataset does not give detailed insights about the customer such as age, gender so the only two variables that help to produce somewhat meaningful results are: the average review of the customer and the mean review a specific customer has given other products in the same category.
+* Unfornatuely the dataset does not give detailed insights about the customer such as age, gender so the only two variables that help to produce somewhat meaningful results are: the average review of the customer and the mean review a specific customer has given other products in the same category. Combining these two input factor and weighting them helps us to predict how likely a customer is to like the product(indicated by a potentially high rating).
 * Accross all of the products if we create a collaborative filtering algorithm, we get a mean error of 1.12
+* It should be mentioned that the ratings suffer a bias, because of two reasons, most of the people do not give a rating after an online purchase. If they do they give it because the product either exceeded or failed to meet their expecations. This leads to a sample bias. 
 
 ### Linear Regression
+* Using a Linear Regression with the independent variables product_id, customer_state, product_category_name, product_photos_qty were not able to generate significant results and it would be better for Olist to use a collaborative filtering approach that 
 
 ## Customer Lifetimevalue
+*
