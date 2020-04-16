@@ -1,5 +1,7 @@
 # Analysis of a Brazilian e-Commerce Dataset
-Olist is a marketplace that allows different companies to sell their products online. Many of them are small producers or traders with little experience in business administration. My goal is to help them identify potential ways to improve their sales and success on this specific marketplace. The client of this project are product sellers on olist and olist itself. The goal of my analysis is therefore to give some recommendations to the sellers on how to increase their sales on the platform.
+## Abstract
+The following data science project investigates the sales data of Brazilian online market place called Olist. The marketplace  allows different companies to sell their products online. Many of them are small producers or traders with little experience in business administration. One of the main objectives is to find out about the business case of such platforms. It is of strong interests to analyze both sides of the market place, in order to find out whether it is possible to build a company on top of it or if the main winner is the marketplace itself.
+The research result show one strong trend: there are a lot of small clients and resellers, but very few big ones. Most of the resellers are only able to generate little revenue.
 
 ## Questions
 Some of the questions the analysis is trying to answer are:
