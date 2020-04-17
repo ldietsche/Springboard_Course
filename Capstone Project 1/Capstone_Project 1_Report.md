@@ -89,4 +89,5 @@ The dataset I’m using for my capstone project is available [here](https://www.
 * The revenue paid by the customer represents the overall revenue, as Olist only gets a commission on each transaction and a monthly subscription fee, the customer lifetime value of an Olist customer is much higher.
 
 ## Future Work
-* There are 
+* One of the aspects that could be investigated it the relationship between top selling products and top selling resellers. Are top selling resellers generating their revenue across different products or just a few?
+* The limited information of the user data made it difficult to make a meaningful recommender. One coudl use one of the two models(collaborative filtering or regression model) as a baseline but then adjust the weights as more data such as user clicks are gathered. Olist definitely has more information on file such as gender, age, income class, and interests. This would definitely help to improve the performance of a recommender.
