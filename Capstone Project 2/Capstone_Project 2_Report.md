@@ -8,6 +8,8 @@ Data is updated once daily at 2 pm GMT, Monday-Friday, with a lag of 1-2 busines
 The data will be imported to Python using the quandl API.
 
 ## Questions
+As all of the analysis in this projects are considering time series and the dependent variable has to be shifted in the rows, because we try to forecast something that happens in the future.
+
 ### Exchange Rates
 * There are different theories about the determination of exchange rates, including purchasing power parity and interest rate parity. The project will investigate whether some of the economic variables of the dataset can be used to determine the long-term exchange rate fluctations. This would support companies to plan their currency hedging strategies. The impact of the variables on the exchange rates will be tested using a linear regression model or an LSTM.
 
