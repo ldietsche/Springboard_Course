@@ -1,7 +1,7 @@
 # Analysis of a Brazilian e-Commerce Dataset
 ## Abstract
 The following data science project investigates the sales data of Brazilian online market place called Olist. The marketplace  allows different companies to sell their products online. Many of them are small producers or traders with little experience in business administration. One of the main objectives is to find out about the business case of such platforms. It is of strong interests to analyze both sides of the market place, in order to find out whether it is possible to build a company on top of it or if the main winner is the marketplace itself.
-The research result show one strong trend: there are a lot of small clients and resellers, but very few big ones. Most of the resellers are only able to generate little revenue.
+The research result show one strong trend: there are a lot of small clients and resellers, but very few big ones. Most of the resellers are only able to generate little revenue. It is possible to create a brand/company on such a platform, but due to the competitive environment most of the reseller stays small. 
 
 ## Questions
 Some of the questions the analysis is trying to answer are:
@@ -83,9 +83,10 @@ The dataset I’m using for my capstone project is available [here](https://www.
 * if one could include further characteristics such as age, income, gender, interests, a linear regression model might perform better than a collaborative filtering.
 
 ## Customer Lifetimevalue
-* Knowing the customer lifetime value can help a company estimate the maximum customer acquisition cost for the company to be profitable. In order to estimate the customer lifetime value it would be good to have more than just two years of data, but there are some insights we can still gain from the data available.
-* Using the package lifetimes can help us estimate the future transcation value per seller or customer, this will give us an idea, how much a customer is worth to the company/seller.
+* Knowing the customer lifetime value can help a company estimate the maximum customer acquisition cost for the company to be profitable. In order to estimate the customer lifetime value exactly one would need to have more than just two years of data, but there are some insights we can still gain from the data available.
+* The package lifetimes can help us estimate the future transcation value per seller or customer, this will give us an idea, how much a customer is worth to the company/seller.
 * Based on the average number of purchases and the purchase value one can estimate the overall customer lifetime value. The results show that the CLV of the analyzed period is around BRL 140 for the platform seller. 
 * The revenue paid by the customer represents the overall revenue, as Olist only gets a commission on each transaction and a monthly subscription fee, the customer lifetime value of an Olist customer is much higher.
 
 ## Future Work
+* There are 
