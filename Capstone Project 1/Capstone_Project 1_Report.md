@@ -82,6 +82,10 @@ The dataset I’m using for my capstone project is available [here](https://www.
 * Using a Linear Regression with the independent variables product_id, customer_state, product_category_name, product_photos_qty were not able to generate significant results and it would be better for Olist to use a collaborative filtering approach that learns over time.
 * if one could include further characteristics such as age, income, gender, interests, a linear regression model might perform better than a collaborative filtering.
 
+### Random Forest
+* The random forest regression seems to produce good results, but the algorithm is overfitting the data.
+* It is unlikely that a randomforest regression would be implemented in reality, because of the speed of computation. A recommendation of a product needs to be done within seconds and a random forest would thus simply take too long.
+
 ## Customer Lifetimevalue
 * Knowing the customer lifetime value can help a company estimate the maximum customer acquisition cost for the company to be profitable. In order to estimate the customer lifetime value exactly one would need to have more than just two years of data, but there are some insights we can still gain from the data available.
 * The package lifetimes can help us estimate the future transcation value per seller or customer, this will give us an idea, how much a customer is worth to the company/seller.
