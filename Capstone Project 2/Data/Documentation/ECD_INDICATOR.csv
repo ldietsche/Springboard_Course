@@ -1,0 +1,208 @@
+code,indicator
+001,ADP Employment Change
+002,Average Hourly Earnings
+003,Average Weekly Hours
+004,Balance Of Trade
+005,Bank Lending Rate
+006,Bankruptcies
+007,Banks Balance Sheet
+008,Building Permits
+009,Business Confidence
+010,Business Inventories
+011,Capacity Utilization
+012,Capital Flows
+013,Car Production
+014,Car Registrations
+015,Cash Reserve Ratio
+016,Cement Production
+017,Central Bank Balance Sheet
+018,Challenger Job Cuts
+019,Changes In Inventories
+020,Chicago Fed National Activity Index
+021,Chicago PMI
+022,Claimant Count Change
+023,Coincident Index
+024,Competitiveness Index
+025,Competitiveness Rank
+026,Composite PMI
+027,Construction Orders
+028,Construction Output
+029,Construction PMI
+030,Construction Spending
+031,Consumer Confidence
+032,Consumer Confidence Price Trends
+033,Consumer Credit
+034,Consumer Price Index CPI
+035,Consumer Spending
+036,Continuing Jobless Claims
+037,Copper Production
+038,Core Consumer Prices
+039,Core Inflation Rate
+040,Core Pce Price Index
+041,Core Producer Prices
+042,Corporate Profits
+043,Corporate Tax Rate
+044,Corruption Index
+045,Corruption Rank
+046,CPI Housing Utilities
+047,CPI Transportation
+048,Crude Oil Production
+049,Crude Oil Rigs
+050,Crude Oil Stock Change
+051,Crude Oil Stocks Change
+052,Currency
+053,Current Account
+054,Current Account To GDP
+055,Deposit Interest Rate
+056,Disposable Personal Income
+057,Durable Goods Orders
+058,Ease Of Doing Business
+059,Economic Optimism Index
+060,Economy Watchers Survey
+061,Electricity Production
+062,Employed Persons
+063,Employment Change
+064,Employment Rate
+064,Labour Force
+065,Existing Home Sales
+066,Export Prices
+067,Exports
+068,External Debt
+069,Factory Orders
+070,Factory Orders Ex Transportation
+071,Fiscal Expenditure
+072,Fixed Asset Investment
+073,Food Inflation
+074,Foreign Bond Investment
+075,Foreign Direct Investment
+076,Foreign Exchange Reserves
+077,Foreign Stock Investment
+078,Full Time Employment
+079,Gasoline Prices
+080,Gasoline Stocks Change
+081,GDP
+081,GDP (USD)
+082,GDP Annual Growth Rate
+083,GDP Annual Growth Rate
+084,GDP Constant Prices
+085,GDP Deflator
+086,GDP From Agriculture
+087,GDP From Construction
+088,GDP From Manufacturing
+089,GDP From Mining
+090,GDP From Public Administration
+091,GDP From Services
+092,GDP From Transport
+093,GDP From Utilities
+094,GDP Growth Annualized
+095,GDP Growth Rate
+096,GDP Per Capita
+097,GDP Per Capita Ppp
+098,Gold Reserves
+099,Government Bond 10y
+100,Government Budget
+101,Government Budget Value
+102,Government Debt
+103,Government Debt To GDP
+104,Government Payrolls
+105,Government Revenues
+106,Government Spending
+107,Government Spending To GDP
+108,Gross Fixed Capital Formation
+109,Gross National Product
+110,Harmonised Consumer Prices
+111,Household Spending
+112,Housing Index
+113,Housing Starts
+114,Import Prices
+115,Imports
+116,Industrial Production
+117,Industrial Production Mom
+118,Inflation Expectations
+119,Inflation Rate
+120,Inflation Rate
+121,Inflation Rate Mom
+122,Initial Jobless Claims
+123,Interbank Rate
+124,Interest Rate
+125,Internet Speed
+126,Ip Addresses
+128,Job Advertisements
+129,Job Offers
+130,Job Vacancies
+131,Labor Force Participation Rate
+132,Labour Costs
+133,Leading Composite Index
+134,Leading Economic Index
+135,Lending Rate
+136,Loan Growth
+137,Loans To Private Sector
+138,Long Term Unemployment Rate
+139,Machinery Orders
+140,Manufacturing Payrolls
+141,Manufacturing PMI
+142,Manufacturing Production
+143,Military Expenditure
+144,Minimum Wages
+145,Mining Production
+146,Money Supply M0
+147,Money Supply M1
+148,Money Supply M2
+149,Money Supply M3
+150,Mortgage Applications
+151,Mortgage Approvals
+152,Mortgage Rate
+153,Nahb Housing Market Index
+154,Natural Gas Stocks Change
+155,Net Long Term Tic Flows
+156,New Home Sales
+157,New Orders
+158,Nfib Business Optimism Index
+159,Non Farm Payrolls
+160,Non Manufacturing PMI
+161,Nonfarm Payrolls Private
+162,Ny Empire State Manufacturing Index
+163,Part Time Employment
+164,Pce Price Index
+165,Pending Home Sales
+166,Personal Income
+167,Personal Income Tax Rate
+168,Personal Savings
+169,Personal Spending
+170,Philadelphia Fed Manufacturing Index
+171,Population
+172,Precipitation
+173,Private Investment
+174,Private Sector Credit
+175,Producer Prices
+176,Producer Prices Change
+177,Productivity
+178,Redbook Index
+179,Remittances
+180,Retail Sales Ex Autos
+181,Retail Sales Mom
+182,Retail Sales Yoy
+183,Retirement Age Men
+184,Retirement Age Women
+185,Sales Tax Rate
+186,Services PMI
+187,Social Security Rate
+188,Social Security Rate For Companies
+189,Social Security Rate For Employees
+190,Steel Production
+191,Stock Market
+192,Temperature
+193,Terms Of Trade
+194,Terrorism Index
+195,Total Vehicle Sales
+196,Tourism Revenues
+197,Tourist Arrivals
+198,Unemployed Persons
+199,Unemployment Change
+200,Unemployment Rate
+201,Wage Growth
+202,Wages
+203,Wages In Manufacturing
+204,Wholesale Inventories
+205,Youth Unemployment Rate
+206,Zew Economic Sentiment Index
