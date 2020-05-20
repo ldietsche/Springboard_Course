@@ -19,5 +19,10 @@ As all of the analysis in this projects are considering time series and the depe
 ### Recession Forecast
 * The health of an economy is very important for businesses and investors, one of the goals is to use economic data to determine the probability of a recession in the subsequent quarter. A recession in economic terms is usually defined as two quarters of negative GDP growth rate. The probability of a recession will be determined using a logit-regression.
 
+## Questions
+### Data Import
+
+
+
 ## Future Work
 
