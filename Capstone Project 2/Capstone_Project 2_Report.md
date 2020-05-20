@@ -5,7 +5,13 @@
 The dataset used is from quandl and can be obtained [here](https://www.quandl.com/data/WWDI-World-Bank-World-Development-Indicators/documentation). The Global Economic Indicators (ECD) data feed contains macroeconomic data for over 200 countries and regions. Over 200 indicators are available, with an average of 90 indicators per country. The data comes from official sources, such as central banks, statistical offices, finance ministries, stock exchanges, industry associations, and other government and semi-government bodies. Historical coverage varies by indicator, with some indicators going back as far as 1960.
 Data is updated once daily at 2 pm GMT, Monday-Friday, with a lag of 1-2 business days. This allows an analysis of the present situation.
 
-The data will be imported to Python using the quandl API.
+### Data Download
+The data was imported to Python using the quandl API. Due to hourly limitations, and the quantity of data, the API calls were done in a different file, stored on github under: Capstone 2_Data Import.ipynb, it can be accessed [here](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%202/Capstone%202_Data%20Import.ipynb)
+
+Using the Data Import File, all indicators available for all countries in the dataset were imported using the API. Upon downloading the data a local copy was stored as a csv in order to import it again. 
+
+### Data Import
+Once all of the data was downloaded, it was imported into the analysis notebook
 
 ## Questions
 As all of the analysis in this projects are considering time series and the dependent variable has to be shifted in the rows, because we try to forecast something that happens in the future.
@@ -19,10 +25,9 @@ As all of the analysis in this projects are considering time series and the depe
 ### Recession Forecast
 * The health of an economy is very important for businesses and investors, one of the goals is to use economic data to determine the probability of a recession in the subsequent quarter. A recession in economic terms is usually defined as two quarters of negative GDP growth rate. The probability of a recession will be determined using a logit-regression.
 
-## Questions
-### Data Import
-
-
+## Exploratory Analysis
+### Stationarity
+### PCA
 
 ## Future Work
 
