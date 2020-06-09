@@ -16,6 +16,9 @@ Once all of the data was downloaded, it was imported into the analysis notebook.
 ### Data Selection
 In order to get meaningful results, only the most frequently reported indicators were chosen and countries with little data were dropped. During this selection process the number of economic indicators was reduced to 116. During the initial analysis it became visible, that it is necessary to drop data before 2000. The reason for that is, that the data set before 2000 is very dispersed and the dataset often only contains good data of the countries afterwards.
 
+### Missing Data
+Most of the missing data was dropped in the selection of the indicator or the countries. Nevertheless there were missing data entries, some of them due to the lack of data for a specific country or different reporting frequencies(some countries report certain indicators monthly, others quartely, and some even just annually. Because a macroeconomic indicator is essentially a backward looking number, the missing numbers were backfilled.
+
 ## Questions
 As all of the analysis in this projects are considering time series and the dependent variable has to be shifted in order to forecast something that happens in the future.
 
