@@ -38,6 +38,7 @@ Visualizing 116 variables is difficult and for that reason I chose to do a 2 Fac
 * Using the date as a color indicator is very helpful too, because it shows clearly, that all countries start in the middle and then some of them are moving more towards the outside as time progresses.
 
 ### Stationarity
+![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%202/Graphs/ADF_Results_Indicator%2025.png)
 
 
 ## Future Work
