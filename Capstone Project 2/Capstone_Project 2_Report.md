@@ -38,8 +38,18 @@ Visualizing 116 variables is difficult and for that reason I chose to do a 2 Fac
 * Using the date as a color indicator is very helpful too, because it shows clearly, that all countries start in the middle and then some of them are moving more towards the outside as time progresses.
 
 ### Stationarity
+Stationarity in time series analysis is important, because stationary processes are easier to analyze as the range doesn't change through time, 
+### Augmented Dickey Fuller Test
+In order to identify stationary time series an augmented Dickey Fuller test was conducted for each of the indicators.
+The Augmented Dickey Fuller test is essentially a hypothesis testing with:
+* H0: Time series is not stationary
+* HA: Time series is stationary
+
+The ADF values between the countries for specific indicators varied significantly. For that reason I considered the distribution of the values and took a decision considering the meaning of the indicator and its time series chart for each country. 
+
 ![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%202/Graphs/ADF_Results_Indicator%2025.png)
 
+After the analysis, the non-stationary indicators were differenced in order to be stationary, in other words instead of considering the GDP the change in GDP was considered.
 
 ## Future Work
 
