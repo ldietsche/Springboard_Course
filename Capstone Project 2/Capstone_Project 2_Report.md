@@ -27,11 +27,11 @@ As all of the analysis in this projects are considering time series and the depe
 Visualizing 116 variables is difficult and for that reason I chose to do a 2 Factor PCA to display the data visually. One time I used the country name as the color of the data points and once the date.
 
 #### PCA - Countries
-![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%201/Pictures/Number_of_Units_Bought_by_Single_Customer.png)
+![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%202/Graphs/PCA_Countries.png)
 * Similar to the sellers, the majority of buyers conduct very little purchases, there are some exceptions that buy a lot
 
 #### PCA - Date
-![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%201/Pictures/Number_of_Units_Bought_by_Single_Customer.png)
+![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%202/Graphs/PCA_Years.png)
 * Similar to the sellers, the majority of buyers conduct very little purchases, there are some exceptions that buy a lot
 
 
