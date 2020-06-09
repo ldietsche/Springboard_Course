@@ -11,7 +11,10 @@ The data was imported to Python using the quandl API. Due to hourly limitations,
 Using the Data Import File, all indicators available for all countries in the dataset were imported using the API. Upon downloading the data a local copy was stored as a csv in order to import it again. 
 
 ### Data Import
-Once all of the data was downloaded, it was imported into the analysis notebook
+Once all of the data was downloaded, it was imported into the analysis notebook. In order to make reopening faster it was stored locally as a pickle as well. Exchange rates data was imported using the Yahoo Finance API. Upon downloading this data it was merged into the master dataframe and exported as a pickle to facilitate faster import in subsequent sessions.
+
+### Data Preparation
+
 
 ## Questions
 As all of the analysis in this projects are considering time series and the dependent variable has to be shifted in the rows, because we try to forecast something that happens in the future.
