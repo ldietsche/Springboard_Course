@@ -13,24 +13,21 @@ Using the Data Import File, all indicators available for all countries in the da
 ### Data Import
 Once all of the data was downloaded, it was imported into the analysis notebook. In order to make reopening faster it was stored locally as a pickle as well. Exchange rates data was imported using the Yahoo Finance API. Upon downloading this data it was merged into the master dataframe and exported as a pickle to facilitate faster import in subsequent sessions.
 
-### Data Preparation
-
+### Data Selection
+In order to get meaningful results, only the most frequently reported indicators were chosen and countries with little data were dropped. During this selection process the number of economic indicators was reduced to 116. During the initial analysis it became visible, that it is necessary to drop data before 2000. The reason for that is, that the data set before 2000 is very dispersed and the dataset often only contains good data of the countries afterwards.
 
 ## Questions
-As all of the analysis in this projects are considering time series and the dependent variable has to be shifted in the rows, because we try to forecast something that happens in the future.
+As all of the analysis in this projects are considering time series and the dependent variable has to be shifted in order to forecast something that happens in the future.
 
 ### Exchange Rates
 * There are different theories about the determination of exchange rates, including purchasing power parity and interest rate parity. The project will investigate whether some of the economic variables of the dataset can be used to determine the long-term exchange rate fluctations. This would support companies to plan their currency hedging strategies. The impact of the variables on the exchange rates will be tested using a linear regression model or an LSTM.
 
-### Money Supply
-* A change in monetary supply can have different impacts, the research of this projects will investigate a potential linkage between monetary supply and stock returns, and the impact of the money supply of the united states on the gold price denominated in USD. The determination of the impact of monetary supply on the gold price and the stock prices will be done using a linear regression model or a LSTM.
-
-### Recession Forecast
-* The health of an economy is very important for businesses and investors, one of the goals is to use economic data to determine the probability of a recession in the subsequent quarter. A recession in economic terms is usually defined as two quarters of negative GDP growth rate. The probability of a recession will be determined using a logit-regression.
-
 ## Exploratory Analysis
-### Stationarity
 ### PCA
+Visualizing 116 variables is difficult and for that reason a PCA was chosen.
+
+### Stationarity
+
 
 ## Future Work
 
