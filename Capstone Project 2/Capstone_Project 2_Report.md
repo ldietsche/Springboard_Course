@@ -28,12 +28,11 @@ Visualizing 116 variables is difficult and for that reason I chose to do a 2 Fac
 
 #### PCA - Countries
 ![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%202/Graphs/PCA_Countries.png)
-* Similar to the sellers, the majority of buyers conduct very little purchases, there are some exceptions that buy a lot
+* Using the countries as different colors shows the majority of them is centralized, but some of them are moving to the outside of the graph. Looking at the most extreme cases: ID (Indonesia), IR (Iran), SN (Senegal), ER (Eritrea), TR (Turkey), CN (China), TW (Taiwan), US (United States), ZM (Zambia), LY (Lybia), KR (South Korea). What is surprising is to find the US and Korea in this list, because it seems like countries that moved from the center to the outside are economies with higher volatility and growth due to their development or political circumstances.
 
 #### PCA - Date
 ![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%202/Graphs/PCA_Years.png)
-* Similar to the sellers, the majority of buyers conduct very little purchases, there are some exceptions that buy a lot
-
+* Using the date as a color indicator is very helpful too, because it shows clearly, that all countries start in the middle and then some of them are moving more towards the outside as time progresses.
 
 ### Stationarity
 
