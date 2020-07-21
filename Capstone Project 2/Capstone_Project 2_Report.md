@@ -14,7 +14,7 @@ Using the Data Import File, all indicators available for all countries in the da
 Once all of the data was downloaded, it was imported into the analysis notebook. In order to make reopening faster it was stored locally as a pickle as well. Exchange rates data was imported using the Yahoo Finance API. Upon downloading this data it was merged into the master dataframe and exported as a pickle to facilitate faster import in subsequent sessions.
 
 ### Data Selection
-In order to get meaningful results, only the most frequently reported indicators were chosen and countries with little data were dropped. During this selection process the number of economic indicators was reduced to 116. During the initial analysis it became visible, that it is necessary to drop data before 2000. The reason for that is, that the data set before 2000 is very dispersed and the dataset often only contains good data of the countries afterwards.
+In order to get meaningful results, only the most frequently reported indicators were chosen and countries with little data were dropped. During this selection process the number of economic indicators was reduced to 116. During the initial analysis it became visible, that it is necessary to drop data before 2000. The reason for that is, that the data set before 2000 is very dispersed and the dataset often only contains good data of the countries afterwards. After analyzing the results of the Dickey Fuller test and the exploratory analysis, indicators with insufficient data were dropped. Unfortunately many countries do not report indicators on a frequent basis and thus cannot be considered for the training of the exchange rate forecast.
 
 ### Missing Data
 Most of the missing data was dropped in the selection of the indicator or the countries. Nevertheless there were missing data entries, some of them due to the lack of data for a specific country or different reporting frequencies(some countries report certain indicators monthly, others quartely, and some even just annually. Because a macroeconomic indicator is essentially a backward looking number, the missing numbers were backfilled.
@@ -50,6 +50,22 @@ The ADF values between the countries for specific indicators varied significantl
 ![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%202/Graphs/ADF_Results_Indicator%2025.png)
 
 After the analysis, the non-stationary indicators were differenced in order to be stationary, in other words instead of considering the GDP the change in GDP was considered.
+
+## Machine Learning Models
+### Linear Model
+The baseline model used for estimating the forecasts was an OLS that used independent variables (economic variables at t-1) to forecast the dependent variable (exchange rate at t). The time shift is necessary, because the idea is to forecast the future change in exchange rates. Please find below the standard statistical output:
+
+| Attempt | #1  | #2  |
+| :---:   | :-: | :-: |
+| Seconds | 301 | 283 |
+
+### Linear Model with 22 Factors and Subsequent Return
+
+### VAR with 22 Factors & Subsequent Quarter Price Change
+
+## Results
+- a lot more variance than just 
+
 
 ## Future Work
 
