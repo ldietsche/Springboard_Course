@@ -52,14 +52,19 @@ The ADF values between the countries for specific indicators varied significantl
 After the analysis, the non-stationary indicators were differenced in order to be stationary, in other words instead of considering the GDP the change in GDP was considered.
 
 ## Machine Learning Models
-### Linear Model
+### Linear Model with 
 The baseline model used for estimating the forecasts was an OLS that used independent variables (economic variables at t-1) to forecast the dependent variable (exchange rate at t). The time shift is necessary, because the idea is to forecast the future change in exchange rates. Please find below the standard statistical output:
 
 | Model | Df Model |  R-squared |Adj. R-squared  | F-statistic |Prob (F-statistic)|AIC       |BIC      |
 | :-:   | :-:      | :-:        | :-:            | :-:         |:-:               |:-:       |:-:      |
 | OLS   | 108      |  0.002     |-0.002          | 0.5478      |1.00              |2.702e+05 |2.711e+05|
 
-### Linear Model with 22 Factors and Subsequent Return
+### Linear Model with 22 Factors and Subsequent Quarter Return
+After the baseline model the independent factors were reduced to the 22 most relevant ones. Relevancy in this context included both theoretical relevancy based on economical theory and statistical relevancy in the baseline model. In addition to that 
+dummy variables
+| Model | Df Model |  R-squared |Adj. R-squared  | F-statistic |Prob (F-statistic)|AIC       |BIC      |
+| :-:   | :-:      | :-:        | :-:            | :-:         |:-:               |:-:       |:-:      |
+| OLS   | 185      |  0.028     |0.023           | 5.006       |4.22e-97          |3.549e+05 |3.565e+05|
 
 ### VAR with 22 Factors & Subsequent Quarter Price Change
 
