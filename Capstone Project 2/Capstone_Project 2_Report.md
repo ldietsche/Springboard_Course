@@ -55,9 +55,9 @@ After the analysis, the non-stationary indicators were differenced in order to b
 ### Linear Model
 The baseline model used for estimating the forecasts was an OLS that used independent variables (economic variables at t-1) to forecast the dependent variable (exchange rate at t). The time shift is necessary, because the idea is to forecast the future change in exchange rates. Please find below the standard statistical output:
 
-| Model | Adj. R-squared  | F-statistic |Prob (F-statistic)|AIC       |BIC      |
-| :-:   | :-:             | :-:         |:-:               |:-:       |:-:      |
-| OLS   | -0.002          | 0.5478      |1.00              |2.702e+05 |2.711e+05|
+| Model | Df Model |  R-squared |Adj. R-squared  | F-statistic |Prob (F-statistic)|AIC       |BIC      |
+| :-:   | :-:      | :-:        | :-:            | :-:         |:-:               |:-:       |:-:      |
+| OLS   | 108      |  0.002     |-0.002          | 0.5478      |1.00              |2.702e+05 |2.711e+05|
 
 ### Linear Model with 22 Factors and Subsequent Return
 
