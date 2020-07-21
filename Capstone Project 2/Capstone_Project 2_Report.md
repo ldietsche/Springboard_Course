@@ -60,17 +60,20 @@ The baseline model used for estimating the forecasts was an OLS that used indepe
 | OLS   | 108      |  0.002     |-0.002          | 0.5478      |1.00              |2.702e+05 |2.711e+05|
 
 ### Linear Model with 22 Factors and Subsequent Quarter Return
-After the baseline model the independent factors were reduced to the 22 most relevant ones. Relevancy in this context included both theoretical relevancy based on economical theory and statistical relevancy in the baseline model. In addition to that 
-dummy variables
+After the baseline model the independent factors were reduced to the 22 most relevant ones. Relevancy in this context included both theoretical relevancy based on economical theory and statistical relevancy in the baseline model. In addition to that a country dummy variable was introduced in order to account for geographical differences between countries. In the phase of the exploratory analysis it became clear, that there is a huge difference between countries, especially if they are in different stages of economic development. 
+
 | Model | Df Model |  R-squared |Adj. R-squared  | F-statistic |Prob (F-statistic)|AIC       |BIC      |
 | :-:   | :-:      | :-:        | :-:            | :-:         |:-:               |:-:       |:-:      |
 | OLS   | 185      |  0.028     |0.023           | 5.006       |4.22e-97          |3.549e+05 |3.565e+05|
 
+As one can see in the statistical output, increasing the forecasting horizon and introducing country dummies increases the explanatory power of a model even though we have less independent factors. This is very favorable, because it allowed for a reduced complexity. That being said, an R2 adjusted of 2.3% is not sufficient enough in order to use this model in order to forecast exchange rates close enough to reduce hedging costs or even trade on it. For that reason a VAR model will be developed in order to see if it is possible to increase explanatory power by increasing a time-dependency.
+
 ### VAR with 22 Factors & Subsequent Quarter Price Change
+
 
 ## Results
 - a lot more variance than just 
-
+- efficient markets
 
 ## Future Work
 
