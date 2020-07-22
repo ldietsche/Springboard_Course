@@ -70,11 +70,23 @@ As one can see in the statistical output, increasing the forecasting horizon and
 
 
 ### VAR with 22 Factors & Subsequent Quarter Price Change
+Introducing time dependency into the model may help, because the development of economic variables through time is important. A VAR model can account for that, because it can capture the linear interdependencies among multiple time series. In the case at hand we are however only interested in forecasting one variable. Country dummies are introduced using exogenous variables and help to account for geographical differences.<br>
+The model was estimated using lags from 1 to 9. The table below shows the development of the AIC, BIC, FPE, and HQIC.
 
+| Lag   | 1       |  2      |3        | 4       |5       |
+| :-:   | :-:     | :-:     | :-:     | :-:     |:-:     |
+| AIC   | -204.09 | -204.07 |-204.05  | -204.02 |-203.99 |
+| :-:   | :-:     | :-:     | :-:     | :-:     |:-:     |
+| BIC   | -202.58 | -202.37 |-202.15  | -201.93 |-201.70 |
+| :-:   | :-:     | :-:     | :-:     | :-:     |:-:     |
+| FPE   | 2.31    |  2.36   |2.42     | 2.49    |2.56    |
+| :-:   | :-:     | :-:     | :-:     | :-:     |:-:     |
+| HQIC  | -203.60 | -203.52 | -203.43 | -203.34 |-203.24 |
 
 ## Results
 - a lot more variance than just 
 - efficient markets
+- 
 
 ## Future Work
 
