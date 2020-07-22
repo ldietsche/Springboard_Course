@@ -91,10 +91,7 @@ In the following graphs the VAR model with lag 1 was used to forecast the exchan
 ### Russia
 ![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%202/Graphs/RU.png)
 
-All of the graphs show
-- a lot more variance than just 
-- efficient markets
-- 
+The graphs show, that for some countries the VAR model workes better than for others. But the 
 
 ## Future Work
 
