@@ -83,6 +83,8 @@ The model was estimated using lags from 1 to 9. The table below shows the develo
 Considering the statistical output above it makes sense to select the model with lag 1. The reason for that is that FPE increases with the lags, whereas the AIC, BIC, and HQIC stays more or less constant.
 
 ## Results
+![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%202/Graphs/BR.png)
+
 - a lot more variance than just 
 - efficient markets
 - 
