@@ -11,7 +11,7 @@ The data was imported to Python using the quandl API. Due to hourly limitations,
 Using the Data Import File, all indicators available for all countries in the dataset were imported using the API. Upon downloading the data a local copy was stored as a csv in order to import it again. 
 
 ### Data Import
-Once all of the data was downloaded, it was imported into the analysis notebook. In order to make reopening faster it was stored locally as a pickle as well. Exchange rates data was imported using the Yahoo Finance API. Upon downloading this data it was merged into the master dataframe and exported as a pickle to facilitate faster import in subsequent sessions.
+Once all of the data was downloaded, it was imported into the analysis notebook "Capstone 2_Data Analysis", which can be accessed [here](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%202/Capstone%202_Data%20Import.ipynb). In order to make reopening faster it was stored locally as a pickle as well. Exchange rates data was imported using the Yahoo Finance API. Upon downloading this data it was merged into the master dataframe and exported as a pickle to facilitate faster import in subsequent sessions.
 
 ### Data Selection
 In order to get meaningful results, only the most frequently reported indicators were chosen and countries with little data were dropped. During this selection process the number of economic indicators was reduced to 116. During the initial analysis it became visible, that it is necessary to drop data before 2000. The reason for that is, that the data set before 2000 is very dispersed and the dataset often only contains good data of the countries afterwards. After analyzing the results of the Dickey Fuller test and the exploratory analysis, indicators with insufficient data were dropped. Unfortunately many countries do not report indicators on a frequent basis and thus cannot be considered for the training of the exchange rate forecast.
@@ -92,8 +92,9 @@ In the following graphs the VAR model with lag 1 was used to forecast the exchan
 ![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%202/Graphs/RU.png)
 
 The graphs show, that for some countries the VAR model workes better than for others. It does perform better than a random guess, but its accuracy is not as high as expected in the beginning. There are several potential reasons for this, amongst them:
-- **Publication Date:** economic data is never published on the end of the month/quarter. In order to be exact when analzying the impact of the economic variables on the exchange rate one therefore would need to have the exact publication date. Unfortunately this information is not available for this study and it would exceed the purpose of this study to find the individual publication date. 
-- 
+- **Publication Date:** economic data is never published on the end of the month/quarter. In order to be exact when analzying the impact of the economic variables on the exchange rate one therefore would need to have the exact publication date. Unfortunately, this information is not available for this study and it would exceed the purpose of this study to find the individual publication date. It is therefore possible that the explanatory power of the models are bigger when accounting for this time-shift.
+- **Variance:** 
+- **Data:** During the data wrangling and exploration phase it became clear that 
 
 ## Future Work
 
