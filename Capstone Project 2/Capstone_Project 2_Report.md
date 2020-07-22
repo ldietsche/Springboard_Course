@@ -94,7 +94,7 @@ In the following graphs the VAR model with lag 1 was used to forecast the exchan
 The graphs show, that for some countries the VAR model workes better than for others. It does perform better than a random guess, but its accuracy is not as high as expected in the beginning. There are several potential reasons for this, amongst them:
 - **Publication Date:** economic data is never published on the end of the month/quarter. In order to be exact when analzying the impact of the economic variables on the exchange rate one therefore would need to have the exact publication date. Unfortunately, this information is not available for this study and it would exceed the purpose of this study to find the individual publication date. It is therefore possible that the explanatory power of the models are bigger when accounting for this time-shift.
 - **Variance:** 
-- **Data:** During the data wrangling and exploration phase it became clear that 
+- **Data:** During the data wrangling and exploration phase it became clear that the economic data 
 
 ## Future Work
 
