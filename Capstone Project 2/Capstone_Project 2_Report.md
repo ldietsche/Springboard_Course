@@ -85,6 +85,10 @@ Considering the statistical output above it makes sense to select the model with
 ## Results
 ![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%202/Graphs/BR.png)
 
+![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%202/Graphs/DE.png)
+
+![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%202/Graphs/RU.png)
+
 - a lot more variance than just 
 - efficient markets
 - 
