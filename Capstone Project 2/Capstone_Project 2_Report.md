@@ -64,7 +64,7 @@ After the baseline model the independent factors were reduced to the 22 most rel
 
 | Model | Df Model |  R-squared |Adj. R-squared  | F-statistic |Prob (F-statistic)|AIC       |BIC      |
 | :-:   | :-:      | :-:        | :-:            | :-:         |:-:               |:-:       |:-:      |
-| OLS   | 185      |  0.028     |0.023           | 5.006       |4.22e-97          |3.549e+05 |3.565e+05|
+| OLS   | 185      |  0.034     |0.028           | 5.990       |1.61e-128         |3.666e+05 |3.682e+05|
 
 As one can see in the statistical output, increasing the forecasting horizon and introducing country dummies increases the explanatory power of a model even though we have less independent factors. This is very favorable, because it allowed for a reduced complexity. The increased F-statistic further shows that the second model is far more likely to have a better forecasting power than a model with no independent variable. That being said, an R2 adjusted of 2.3% is not sufficient enough in order to use this model in order to forecast exchange rates close enough to reduce hedging costs or even trade on it. For that reason a VAR model will be developed in order to see if it is possible to increase explanatory power by increasing a time-dependency.
 
@@ -75,10 +75,10 @@ The model was estimated using lags from 1 to 9. The table below shows the develo
 
 | Lag   | 1       |  2      |3        | 4       |5       |
 | :-:   | :-:     | :-:     | :-:     | :-:     |:-:     |
-| AIC   | -204.09 | -204.07 |-204.05  | -204.02 |-203.99 |
-| BIC   | -202.58 | -202.37 |-202.15  | -201.93 |-201.70 |
-| FPE   | 2.31    |  2.36   |2.42     | 2.49    |2.56    |
-| HQIC  | -203.60 | -203.52 | -203.43 | -203.34 |-203.24 |
+| AIC   | -204.82 | -204.80 |-204.77  | -204.74 |-204.71 |
+| BIC   | -203.31 | -203.10 |-202.87  | -202.65 |-202.43 |
+| FPE   | 1.12    |  1.13   |1.17     | 1.20    |1.24    |
+| HQIC  | -204.33 | -204.24 | -204.15 | -204.06 |-203.97 |
 
 Considering the statistical output above it makes sense to select the model with lag 1. The reason for that is that FPE increases with the lags, whereas the AIC, BIC, and HQIC stays more or less constant.
 
