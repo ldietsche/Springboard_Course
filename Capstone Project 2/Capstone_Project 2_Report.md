@@ -66,7 +66,8 @@ After the baseline model the independent factors were reduced to the 22 most rel
 | :-:   | :-:      | :-:        | :-:            | :-:         |:-:               |:-:       |:-:      |
 | OLS   | 185      |  0.028     |0.023           | 5.006       |4.22e-97          |3.549e+05 |3.565e+05|
 
-As one can see in the statistical output, increasing the forecasting horizon and introducing country dummies increases the explanatory power of a model even though we have less independent factors. This is very favorable, because it allowed for a reduced complexity. That being said, an R2 adjusted of 2.3% is not sufficient enough in order to use this model in order to forecast exchange rates close enough to reduce hedging costs or even trade on it. For that reason a VAR model will be developed in order to see if it is possible to increase explanatory power by increasing a time-dependency.
+As one can see in the statistical output, increasing the forecasting horizon and introducing country dummies increases the explanatory power of a model even though we have less independent factors. This is very favorable, because it allowed for a reduced complexity. The increased F-statistic further shows that the second model is far more likely to have a better forecasting power than a model with no independent variable. That being said, an R2 adjusted of 2.3% is not sufficient enough in order to use this model in order to forecast exchange rates close enough to reduce hedging costs or even trade on it. For that reason a VAR model will be developed in order to see if it is possible to increase explanatory power by increasing a time-dependency.
+
 
 ### VAR with 22 Factors & Subsequent Quarter Price Change
 
