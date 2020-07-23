@@ -1,5 +1,6 @@
 # Analysis of a Macroeconomic Data
 ## Abstract
+This study tried to forecast exchange rates using economic data from [Quandl](https://www.quandl.com/data/WWDI-World-Bank-World-Development-Indicators/documentation). Several methods are tested in order to forecast the change in exchange rates in the subsequent quarter, amongst them OLS and VAR. The results show that a part of the exchange rate fluctuations can be explained using a macroeconomic variables, but there are many other factors that influence prices.
 
 ## Data
 The dataset used is from quandl and can be obtained [here](https://www.quandl.com/data/WWDI-World-Bank-World-Development-Indicators/documentation). The Global Economic Indicators (ECD) data feed contains macroeconomic data for over 200 countries and regions. Over 200 indicators are available, with an average of 90 indicators per country. The data comes from official sources, such as central banks, statistical offices, finance ministries, stock exchanges, industry associations, and other government and semi-government bodies. Historical coverage varies by indicator, with some indicators going back as far as 1960.
@@ -91,12 +92,13 @@ In the following graphs the VAR model with lag 1 was used to forecast the exchan
 ### Russia
 ![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%202/Graphs/RU.png)
 
-The graphs show, that for some countries the VAR model workes better than for others. It does perform better than a random guess, but its accuracy is not as high as expected in the beginning. There are several potential reasons for this, amongst them:
-- **Publication Date:** economic data is never published on the end of the month/quarter. In order to be exact when analzying the impact of the economic variables on the exchange rate one therefore would need to have the exact publication date. Unfortunately, this information is not available for this study and it would exceed the purpose of this study to find the individual publication date. It is therefore possible that the explanatory power of the models are bigger when accounting for this time-shift.
-- **Variance:** As models are trained accross different countries with different economic development the variance of certain indicators is very different. Having a big variance between training samples leads to lower forecasting power.
-- **Data:** During the data wrangling and exploration phase it became clear that the economic data is not always available for all countries and that makes it difficult to use it.
+The graphs show, that for some countries the VAR model workes better than for others. It does perform better than a random guess, but its accuracy is not as high as expected in the beginning. There are several potential reasons for this:
+- **Publication Date:** economic data is never published on the end of the month/quarter. In order to be exact when analzying the impact of the economic variables on the exchange rate one would need to have the exact publication date. The reason for that is that markets are efficient and the release of new information gets priced in relatively quickly. Unfortunately, this information is not available for this study and it would exceed the purpose to find the individual publication date for each variable. It is therefore possible that the explanatory power of the models are bigger/smaller when accounting for this time-shift.
+- **Variance:** As models are trained accross different countries with different economic development the variance of certain indicators is very different. Having a big variance between training samples leads to lower forecasting power. Even though w 
+- **Data:** During the data wrangling and exploration phase it became clear that the economic data is not always available for all countries, which makes it difficult to use it. In addition to that, the data accuracy in some cases is questionable, it would thus make sense to rerun the code data that comes directly from the national banks/governmental agencies that publish the data. 
+- **Factors:** The study tried to account for many economic variables that influence exchange rates, but financial markets are very fast paced and other factors influence the prices as well, especially in the short run. It is thus possible that the fundamental economic data plays a role, but there are other more important factors that influence the supply and demand for currencies.
 
 ## Future Work
-- **LSTM**
-- model for one country.
+- **LSTM:** Both the OLS and the VAR model are only able to account for linear relationships between the variables, it would therefore make sense to account for non-linear relationships. One of the best ways would be to use an LSTM. LSTMs account for both time interdependence and non-linear relationships and thus make it a great model for such problems.
+- **Alternative Datasets:** As mentioned previously, access to information is critical in the financial markets. It might be worth including some alternative datasets in the independent variables to try to account for other factors that exchange rates.
 
