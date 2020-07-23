@@ -1,5 +1,6 @@
 # Analysis of a Macroeconomic Data
 ## Abstract
+This study tried to forecast exchange rates using economic data from [Quandl](https://www.quandl.com/data/WWDI-World-Bank-World-Development-Indicators/documentation). Several methods are tested in order to forecast the change in exchange rates in the subsequent quarter, amongst them OLS and VAR. The results show that a part of the exchange rate fluctuations can be explained using a macroeconomic variables, but there are many other factors that influence prices.
 
 ## Data
 The dataset used is from quandl and can be obtained [here](https://www.quandl.com/data/WWDI-World-Bank-World-Development-Indicators/documentation). The Global Economic Indicators (ECD) data feed contains macroeconomic data for over 200 countries and regions. Over 200 indicators are available, with an average of 90 indicators per country. The data comes from official sources, such as central banks, statistical offices, finance ministries, stock exchanges, industry associations, and other government and semi-government bodies. Historical coverage varies by indicator, with some indicators going back as far as 1960.
@@ -11,7 +12,7 @@ The data was imported to Python using the quandl API. Due to hourly limitations,
 Using the Data Import File, all indicators available for all countries in the dataset were imported using the API. Upon downloading the data a local copy was stored as a csv in order to import it again. 
 
 ### Data Import
-Once all of the data was downloaded, it was imported into the analysis notebook. In order to make reopening faster it was stored locally as a pickle as well. Exchange rates data was imported using the Yahoo Finance API. Upon downloading this data it was merged into the master dataframe and exported as a pickle to facilitate faster import in subsequent sessions.
+Once all of the data was downloaded, it was imported into the analysis notebook "Capstone 2_Data Analysis", which can be accessed [here](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%202/Capstone%202_Data%20Import.ipynb). In order to make reopening faster it was stored locally as a pickle as well. Exchange rates data was imported using the Yahoo Finance API. Upon downloading this data it was merged into the master dataframe and exported as a pickle to facilitate faster import in subsequent sessions.
 
 ### Data Selection
 In order to get meaningful results, only the most frequently reported indicators were chosen and countries with little data were dropped. During this selection process the number of economic indicators was reduced to 116. During the initial analysis it became visible, that it is necessary to drop data before 2000. The reason for that is, that the data set before 2000 is very dispersed and the dataset often only contains good data of the countries afterwards. After analyzing the results of the Dickey Fuller test and the exploratory analysis, indicators with insufficient data were dropped. Unfortunately many countries do not report indicators on a frequent basis and thus cannot be considered for the training of the exchange rate forecast.
@@ -64,7 +65,7 @@ After the baseline model the independent factors were reduced to the 22 most rel
 
 | Model | Df Model |  R-squared |Adj. R-squared  | F-statistic |Prob (F-statistic)|AIC       |BIC      |
 | :-:   | :-:      | :-:        | :-:            | :-:         |:-:               |:-:       |:-:      |
-| OLS   | 185      |  0.028     |0.023           | 5.006       |4.22e-97          |3.549e+05 |3.565e+05|
+| OLS   | 185      |  0.034     |0.028           | 5.990       |1.61e-128         |3.666e+05 |3.682e+05|
 
 As one can see in the statistical output, increasing the forecasting horizon and introducing country dummies increases the explanatory power of a model even though we have less independent factors. This is very favorable, because it allowed for a reduced complexity. The increased F-statistic further shows that the second model is far more likely to have a better forecasting power than a model with no independent variable. That being said, an R2 adjusted of 2.3% is not sufficient enough in order to use this model in order to forecast exchange rates close enough to reduce hedging costs or even trade on it. For that reason a VAR model will be developed in order to see if it is possible to increase explanatory power by increasing a time-dependency.
 
@@ -75,10 +76,10 @@ The model was estimated using lags from 1 to 9. The table below shows the develo
 
 | Lag   | 1       |  2      |3        | 4       |5       |
 | :-:   | :-:     | :-:     | :-:     | :-:     |:-:     |
-| AIC   | -204.09 | -204.07 |-204.05  | -204.02 |-203.99 |
-| BIC   | -202.58 | -202.37 |-202.15  | -201.93 |-201.70 |
-| FPE   | 2.31    |  2.36   |2.42     | 2.49    |2.56    |
-| HQIC  | -203.60 | -203.52 | -203.43 | -203.34 |-203.24 |
+| AIC   | -204.82 | -204.80 |-204.77  | -204.74 |-204.71 |
+| BIC   | -203.31 | -203.10 |-202.87  | -202.65 |-202.43 |
+| FPE   | 1.12    |  1.13   |1.17     | 1.20    |1.24    |
+| HQIC  | -204.33 | -204.24 | -204.15 | -204.06 |-203.97 |
 
 Considering the statistical output above it makes sense to select the model with lag 1. The reason for that is that FPE increases with the lags, whereas the AIC, BIC, and HQIC stays more or less constant.
 
@@ -91,9 +92,13 @@ In the following graphs the VAR model with lag 1 was used to forecast the exchan
 ### Russia
 ![alt text](https://github.com/ldietsche/Springboard_Course/blob/master/Capstone%20Project%202/Graphs/RU.png)
 
-The graphs show, that for some countries the VAR model workes better than for others. It does perform better than a random guess, but its accuracy is not as high as expected in the beginning. There are several potential reasons for this, amongst them:
-- **Publication Date:** economic data is never published on the end of the month/quarter. In order to be exact when analzying the impact of the economic variables on the exchange rate one therefore would need to have the exact publication date. Unfortunately this information is not available for this study and it would exceed the purpose of this study to find the individual publication date. 
-- 
+The graphs show, that for some countries the VAR model workes better than for others. It does perform better than a random guess, but its accuracy is not as high as expected in the beginning. There are several potential reasons for this:
+- **Publication Date:** economic data is never published on the end of the month/quarter. In order to be exact when analzying the impact of the economic variables on the exchange rate one would need to have the exact publication date. The reason for that is that markets are efficient and the release of new information gets priced in relatively quickly. Unfortunately, this information is not available for this study and it would exceed the purpose to find the individual publication date for each variable. It is therefore possible that the explanatory power of the models are bigger/smaller when accounting for this time-shift.
+- **Variance:** As models are trained accross different countries with different economic development the variance of certain indicators is very different. Having a big variance between training samples leads to lower forecasting power. Even though w 
+- **Data:** During the data wrangling and exploration phase it became clear that the economic data is not always available for all countries, which makes it difficult to use it. In addition to that, the data accuracy in some cases is questionable, it would thus make sense to rerun the code data that comes directly from the national banks/governmental agencies that publish the data. 
+- **Factors:** The study tried to account for many economic variables that influence exchange rates, but financial markets are very fast paced and other factors influence the prices as well, especially in the short run. It is thus possible that the fundamental economic data plays a role, but there are other more important factors that influence the supply and demand for currencies.
 
 ## Future Work
+- **LSTM:** Both the OLS and the VAR model are only able to account for linear relationships between the variables, it would therefore make sense to account for non-linear relationships. One of the best ways would be to use an LSTM. LSTMs account for both time interdependence and non-linear relationships and thus make it a great model for such problems.
+- **Alternative Datasets:** As mentioned previously, access to information is critical in the financial markets. It might be worth including some alternative datasets in the independent variables to try to account for other factors that exchange rates.
 
