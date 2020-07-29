@@ -1,4 +1,4 @@
-# Analysis of a Macroeconomic Data
+# Using Macroeconomic Data to Forecast Exchange Rates
 ## Abstract
 This study tried to forecast exchange rates using economic data from [Quandl](https://www.quandl.com/data/WWDI-World-Bank-World-Development-Indicators/documentation). Several methods are tested in order to forecast the change in exchange rates in the subsequent quarter, amongst them OLS and VAR. The results show that a part of the exchange rate fluctuations can be explained using a macroeconomic variables, but there are many other factors that influence prices.
 
